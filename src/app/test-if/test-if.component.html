@@ -1,0 +1,27 @@
+<p>Difference between <span> *ngIf...else</span> and <span>{{txt}}</span></p>
+
+
+<div class="container">
+    <div class="left-container">
+        <p> Normal *ngIf...else </p>
+        <div *ngIf="isToggle; else elseBlock">
+            <p> Hello Angular 18</p>
+        </div>
+        <ng-template #elseBlock>
+            <p>Hello Angular 17</p>
+        </ng-template>
+
+        <button (click)="showHide()">{{btnTxt}}</button>
+    </div>
+
+    <div class="right-container">
+        <p> New {{txt}}</p>
+
+        @if(isShow) {
+            <p>Hello Angular 18</p>
+        } @else {
+            <p> Hello Angular 17</p>
+        }
+        <button (click)="toggle()">{{buttonText}}</button>
+    </div>
+</div>

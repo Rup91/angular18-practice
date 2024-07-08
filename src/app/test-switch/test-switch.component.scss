@@ -1,0 +1,35 @@
+$red: red;
+$green: green;
+$yellow: yellow;
+
+
+.yellow {
+    background-color: $yellow;
+}
+
+.red {
+    background-color: $red;
+}
+
+.green {
+    background-color: $green;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px dotted blue;
+}
+
+.container {
+    display: flex;
+    div {
+        margin: 10px;
+    }
+}

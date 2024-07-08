@@ -1,0 +1,21 @@
+<p>test {{txt}}</p>
+
+<div class="container">
+    
+            <div class="header">
+                <div>Country</div>
+                <div>Capital</div>
+            </div>
+            @for(country of countryLists; track $index ) {
+                <div class="body">
+                    <div>{{country.name}}</div>
+                    <div class="right">{{country.capital}}</div>
+                </div>
+            }
+            @empty {
+                <div>
+                    No records found!
+                </div>
+            }
+    
+</div>

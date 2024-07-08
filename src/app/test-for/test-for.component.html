@@ -1,0 +1,26 @@
+<p>Difference of <span>*ngFor</span> and <span>{{text}}</span></p>
+
+<div class="container">
+    <div class="left-container">
+        <p> Using *ngFor</p>
+        <ul>
+            <ng-container *ngFor="let num of numberLists">
+                    <li>{{num}}</li>
+            </ng-container>
+        </ul>
+    </div>
+    <div class="right-container">
+        <p> Using {{text}}</p>
+        <ul>
+            @for(num of numberLists; track num) {
+                <li>{{num}}</li>
+            }
+        </ul>
+        
+    </div>
+</div>
+<ng-template >
+
+</ng-template>
+
+

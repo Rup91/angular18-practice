@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    
+    div {
+        margin-right: 10%;
+        border: 1px solid black;
+    }
+}
+
+.body {
+    display: flex;
+
+    .right {
+        margin-left: 10%;
+        
+    }
+}

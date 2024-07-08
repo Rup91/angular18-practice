@@ -1,0 +1,41 @@
+<p>test-switch works!</p>
+
+
+
+    @switch(type) {
+
+        @case('red-box') {
+            <div class="red box"></div>
+        }
+
+        @case('red-circle') {
+            <div class="red circle"></div>
+        }
+        @case('green-box') {
+            <div class="green box"></div>
+        }
+
+        @case('green-circle') {
+            <div class="green circle"></div>
+        }
+        @default {
+            <div class="yellow circle"></div>
+        }
+    }
+
+<div class="container">
+    <div>
+        <button (click)="show('red-box')">Show Red Box</button>
+    </div>
+    <div>
+        <button (click)="show('red-circle')">Show Red Circle</button>
+    </div>
+    <div>
+        <button (click)="show('green-box')">Show Green Box</button>
+    </div>
+    <div>
+        <button (click)="show('green-circle')">Show green Circle</button>
+    </div>
+
+
+</div>

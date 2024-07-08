@@ -1,27 +1,19 @@
-# MyTodoApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+## Control flow
 
-## Development server
+Structural directives are directives which change the DOM layout by adding and removing DOM elements.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Angular provides a set of built-in structural directives (such as NgIf, NgForOf, NgSwitch and others) which are commonly used in all Angular projects.
 
-## Code scaffolding
+So far we were using these structural directives like - *ngIf, *ngFor, *ngSwitch 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+But from Angular 17, team angular is suggesting us to use new Control flow syntaxes - @for, @if, @ff.. @else, @switch etc
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Benefits
 
-## Running unit tests
+1. Improve readability & maintainability of our code
+2. Enhancing developer's experience
+3. Potential Performance Gain
+4. Reduce bundle size
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

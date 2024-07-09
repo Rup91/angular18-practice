@@ -1,0 +1,38 @@
+
+
+<!-- using ()  we call signals -->
+<h4> ----- Singnal with primitive type like number ------</h4>
+
+<h3> Counter: {{counter()}}</h3>
+
+<h3> Compute 10x: {{multiplyCounter()}}</h3>
+
+<div class="button-container">
+    <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+</div>
+
+
+<h4> ----- Singnal with non primitive type like Array or Object ------</h4>
+
+<h3> --- Print object --- </h3>
+
+<div>
+    <div>Country: {{countryObj().name}}</div>
+    <div>Capital: {{countryObj().capital}}</div>
+    <div>Freedom: {{countryObj().freedom}}</div>
+</div>
+
+<button class="btn-change" (click)="changeFreedom()">Change Freedom</button>
+
+<h3> --- Print Array --- </h3>
+
+<div>
+    @for(country of countryLists(); track $index) {
+        <div>Country:  {{country}}</div>
+    } @empty {
+        <div>No country found!</div>
+    }
+</div>
+
+<button class="btn-change" (click)="deleteCountry()">Delete country</button>

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+}
+
+.product__container {
+    flex: 0 1 calc(20% - 8px);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}

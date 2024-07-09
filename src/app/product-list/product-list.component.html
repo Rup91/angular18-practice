@@ -1,0 +1,19 @@
+<div class="container">
+    @for(product of productLists(); track product.id) {
+        <div class="product__container">
+            <div class="image__container">
+                <img src="{{product.image}}" alt="{{product.category}}">
+            </div>
+            <div class="details_container">
+                <p>{{product.title}}</p>
+                <p>{{product.price}}</p>
+                <p>{{product.category}}</p>
+            </div>
+        </div>
+    } @empty {
+        <div>
+            No records found!
+        </div>
+    }
+</div>
+

@@ -1,27 +1,51 @@
-# TodoApp
+## What is Signal 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+--> Signals in Angular provide a way to manage and react to state changes in a more declarative and efficient manner.
 
-## Development server
+--> A signal is a reactive primitive that represents a value and that allows us to change that same value in a controlled way and track its changes over time.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Example - 
 
-## Code scaffolding
+    let x = 5;
+    let y = 3;
+    let z = x + y;
+    console.log(z);
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    --> The output will be 8
+    but what happened if later change the value of x and make it 10 ?
 
-## Build
+    let x = 5;
+    let y = 3;
+    let z = x + y;
+    console.log(z);
+    x = 10;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    z will be still 8
+    
+    ** That's because a value is assigned to z when the expression is first evaluated. The z variable does not react to changes in x or y
 
-## Running unit tests
+    ** But using signal we can easily solve this problem. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Advantage
 
-## Running end-to-end tests
+    signals are providing us the following advantages:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    1. Reactive State Management:  Signals allow for a more reactive approach to state management, enabling components to automatically update when the state changes, reducing the need for manual event handling.
 
-## Further help
+    2. Improved performance: Angular can optimize change detection, making applications faster and more efficient. Signals can help minimize unnecessary re-renders and improve overall performance
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    3. Simplified code:  Signals can simplify codes by reducing boilerplate and making state mamagement more intuitive. This leads to cleaner and more maintainable code.
+
+    4. Integration with Angular ecosystem: Signals are well-integrated with angular's exisiting tools and libraries, making it easier to adopt them in existing projects and benefit from the angular ecosystems.
+
+## Implementations
+
+    In this code, I have implemented -
+
+    1. Signal with primitive value i.e. Number
+    2. Signal with non primitive value i.e. Object and Array
+    3. Set(), update(), compute()
+    4. Use signal in api calls and render the value in html and so on.
+
+    ** Additionally routing in angular 18, services.
+
